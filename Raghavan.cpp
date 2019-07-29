@@ -1,10 +1,10 @@
 /*
-A string of the form  x y y^R y z  Z-reduces to  x y z, where  y^R  denotes the revers of  y .
+A string of the form  x y y^R y z  Z-reduces to  x y z, where  y^R  denotes the reverse of  y .
 
 Input : a string w 
 Output : the Z-irreducible form of w
 
-Implementation of Raghavan's algorithm (1994) by Shintaro Barisada (2018)
+Implementation of Raghavan's algorithm (1994) by Shintaro Narisada (2018)
 */
 #include<iostream>
 #include<string>

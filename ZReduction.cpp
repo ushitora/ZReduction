@@ -1,5 +1,5 @@
 /*
-A string of the form  x y y^R y z  Z-reduces to  x y z, where  y^R  denotes the revers of  y .
+A string of the form  x y y^R y z  Z-reduces to  x y z, where  y^R  denotes the reverse of  y .
 
 Input : a string w 
 Output : the Z-irreducible form of w
