@@ -68,8 +68,8 @@ bool stabilize(int c) {
 			if (d + Pals[d] >= c + Pals[c]) {
 				if (fastExtend(d))	{
 					if(stabilize(d)){
-						if (c == w.size() - 1)  return true;
-						if (d == w.size() - 1)  Pals[d] = Pals[2 * c - d];
+						if (c == (int) w.size() - 1)  return true;
+						if (d == (int) w.size() - 1)  Pals[d] = Pals[2 * c - d];
 						t++; w.push_back(T[t]); Pals.push_back(-1);
 						unstable = true;
 						break;
@@ -88,11 +88,11 @@ int main(int argc, char* argv[]) {
 	T = "$" + T + "#";
 	t = 0;
 	w.push_back(T[t]);  Pals.push_back(0);
-	while(t<T.size()) {
+	while(t<(int) T.size()) {
 		t++; w.push_back(T[t]); Pals.push_back(-1);
 		stabilize(w.size() - 2);
 		while(!st.empty()) st.pop();
 	}
-	for (int i = 1; i<w.size()-2; i++) { printf("%c", w[i]); } cout << endl;
+	for (int i = 1; i<(int) w.size()-2; i++) { printf("%c", w[i]); } cout << endl;
 	return 0;
 }
